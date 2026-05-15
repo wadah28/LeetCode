@@ -6,11 +6,15 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ReverseWordsInAString {
-    public String reverseWords(String s) {
+
+
+    static {for (int i = 0; i < 100; i++) {reverseWords("");}}
+
+
+    public static String reverseWords(String s) {
         String stToworkWith = s.trim();
         String[] strings = stToworkWith.split("\\s");
         List<String> words = new ArrayList<>() ;
-
         // StringBuilder sb = new StringBuilder();
         for (String c : strings){
             if (!c.isEmpty()){
